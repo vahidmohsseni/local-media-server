@@ -63,7 +63,7 @@ console.log(settings);
 
 if (argv.g) {
   const admin = require(config.root + '/src/admin/index.js');
-  const adminServer = admin.listen(parseInt(PORT) + 1, 'localhost', () => {
+  const adminServer = admin.listen(parseInt(PORT) + 1, '0.0.0.0', () => {
     console.log('admin server is up');
     const url =
       'http://' +
