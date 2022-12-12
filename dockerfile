@@ -23,4 +23,7 @@ RUN npm install
 
 ENV LOCATION=/h1
 
-RUN node server.js -g true -x
+EXPOSE 3000
+EXPOSE 3001
+
+CMD ["node", "server.js"]

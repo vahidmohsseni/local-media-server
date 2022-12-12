@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  media:
+    image: media-server
+    ports: 
+      - "3000:3000"
+      - "3001:3001"
+    volumes:
+      - /mnt/dr1:/h1:ro
